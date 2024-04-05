@@ -1,0 +1,59 @@
+.users main 
+{
+    margin : 50px 100px;
+    width : 40%;
+    float : left;
+}
+
+.users aside 
+{
+    width :20%;
+    margin-top: 50px;
+    margin-left:5% ;
+    float:left;
+}
+
+
+.users .user 
+{
+  margin-bottom: 50px;
+  background-color: rgb(55, 15, 55);
+  padding : 20px ;
+}
+
+.users .delite_icon,
+.users  .edit_icon
+{
+    float: right ;
+    margin-right: 25px;
+}
+
+
+.users .delite_icon:hover,
+.users  .edit_icon:hover
+{
+    opacity : 0.5 ; 
+}
+
+.users form input,
+.users form textarea,
+.users form button
+{
+    width: 90%;
+    padding: 15px 5%;
+    font-weight: 400;
+    margin-bottom: 10px;
+    border-color: black;
+    border:10px;
+    background-color: #222;
+    color:#FFF;
+} 
+
+
+
+
+
+.users main .delite_icon:hover:hover,main .edit_icon:hover
+{
+    opacity : 0.5 ; 
+}

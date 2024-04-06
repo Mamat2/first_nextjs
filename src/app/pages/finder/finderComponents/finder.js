@@ -34,7 +34,28 @@ export default  function Finder (){
         e.preventDefault();
         
         const result= await fetchData(text);
-        const { Title: name, Year: year} = result
+        const {
+          Title: name,
+          Year: year,
+          Runtime: runtime,
+          Plot: plot,
+          Genre: genre,
+          Director: director,
+          Actors: actors,
+          Language: language,
+          Country: country,
+          Awards: awards,
+          Poster: poster,
+          Metascore: metascore,
+          imdbRating: imdbRating,
+          imdbVotes: imdbVotes,
+          imdbID: imdbID,
+          Type: type,
+          DVD: dvdRelease,
+          BoxOffice: boxOffice,
+          Production: production,
+          Website: website
+        } = result;
        setFilmInfo(result)
        console.log(filmInfo) ;
         //console.log(name) ;

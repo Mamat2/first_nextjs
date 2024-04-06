@@ -1,5 +1,5 @@
 import { Inter } from "next/font/google";
-import "./style.css";
+import style from "./style.module.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -11,7 +11,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     
-      <div className={inter.className}>{children}</div>
+      <div className={style.toDo}>{children}</div>
     
   );
 }

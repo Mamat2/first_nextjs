@@ -1,0 +1,23 @@
+.users table {
+    border-collapse: collapse; /* Ensures spacing between cells */
+    width: 100%; /* Makes the table occupy the full width */
+    margin-bottom: 50px; /* Adds space below the table */
+  }
+  
+  .users  th,
+  .users  td {
+    padding: 10px; /* Adds spacing between content and borders */
+    border: 1px solid #ddd; /* Adds a solid border to all cells */
+    text-align: left; /* Aligns text to the left */
+  }
+  
+  
+  
+  .users  tr:not(:first-child) { /* Selects all rows except the first one */
+    border-top: 1px solid #ddd; /* Adds a solid border to the top of each row */
+  }
+  
+
+  
+
+

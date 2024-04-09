@@ -1,17 +1,4 @@
-/* Base styles */
-.users_1 {
-    font-family: var(--font-mono); /* Use global font */
-    color: var(--foreground-rgb); /* Use global foreground color */
-    background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb)); /* Use global background gradient */
-    margin: 0;
-    padding: 0;
-  }
-  
+
   .users_1 {
     display: flex;
     flex-direction: column;
@@ -20,23 +7,23 @@
     max-width: var(--max-width); /* Use global max-width */
   }
   
-  h1 {
+  .users_1 h1 {
     margin: 10px 0;
     text-align: center;
   }
   
-  ul {
+  .users_1 ul {
     list-style: none;
     padding: 0;
     margin: 0;
   }
   
-  li {
+  .users_1 li {
     margin-bottom: 10px;
   }
   
   /* User card styles */
-  .user-card {
+  .users_1  .user-card {
     background-color: var(--tile-start-rgb); /* Use a lighter tile color */
     border: 1px solid var(--tile-border); /* Use tile border gradient */
     border-radius: var(--border-radius); /* Use global border radius */
@@ -46,7 +33,7 @@
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
   }
   
-  .user-card__header {
+  .users_1 .user-card__header {
     margin-bottom: 10px;
   }
   
@@ -71,22 +58,16 @@
     width: 70px; /* Adjust width for longer labels if needed */
   }
 
-  .header {
+  .users_1  .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
   
-  .header h1 {
-    margin-right: 1rem;
-  }
-  
-  .header .header-right {
-    display: flex;
-    align-items: center;
-  }
 
-  .BackButton {
+  
+
+  .users_1  .BackButton {
     display: inline-block;
     padding: 4px;
     border: 1px solid white;
@@ -96,7 +77,7 @@
     cursor: pointer;
   }
   
-  .BackButton:hover {
+  .users_1 .BackButton:hover {
     background-color: #f5f5f5;
     color:blueviolet;
   }

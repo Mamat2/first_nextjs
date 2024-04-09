@@ -1,5 +1,5 @@
 import { Inter } from "next/font/google";
-import "./style.css";
+import stule from "@/app/pages/react_1/styles.module.css"
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -11,7 +11,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
   
-      <div className={inter.className}>{children}</div>
+      <div className={stule.users_1}>{children}</div>
     
   );
 }

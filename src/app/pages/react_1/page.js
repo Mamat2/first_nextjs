@@ -4,7 +4,7 @@ import BackButton from "@/app/components/BackButton";
 //import User_1 from "./react_1_components/user_1";
 import User_1 from "./react_1_components/User_1";
 import Header from "@/app/components/Header";
-
+import TaskText from "@/app/components/TaskText";
 
 export default function  React_1()
 {
@@ -78,9 +78,13 @@ export default function  React_1()
               "bs": "e-enable strategic applications"
             }
           }];
+
+        const Text = [""];
+
         return(
             <div className="users_1">
             <Header title={"react_1"}/>
+            <TaskText text={Text} />
             <h1>список пользователей </h1>
             <ul>
               {users.map((user) => (

@@ -5,11 +5,14 @@ import Users from './Users';
 import Header from '@/app/components/Header';
 import AddUser from "./AddUser";
 import axios from 'axios';
+import TaskText from '@/app/components/TaskText';
+
 
 const baseUrl = "https://reqres.in/api/users?page=2";
 
 export default function  UserPage  ()  {
   const [users, setUsers] = useState([]);
+  const Text = ["Запросить всех пользователей с https://reqres.in/api/users?page=2"];
 
   useEffect(() => {
     axios.get(baseUrl)
@@ -35,8 +38,9 @@ export default function  UserPage  ()  {
 
   return (
     <div>
-      <Header title={"Users"}/>
+      <Header title={"test Users"}/>
       <main>
+        <TaskText text={Text}/>
         <Users users={users} onEdit={handleChangeUserInformation} onDelete={handleDeleteUser} />
       </main>
       <aside>
